@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+.prose h2 {
+  @apply mt-8 mb-2 text-[1.2rem] font-bold;
+}
+
+.prose h1 {
+  @apply text-center font-bold text-2xl;
+}
+
+.prose ul {
+  @apply list-none p-0; /* Removes default bullets and padding */
+}
+
+/* Style each list item */
+.prose li {
+  @apply relative pl-6 pb-2; /* Add padding for custom bullet and spacing */
+}
+
+/* Create a custom bullet point */
+.prose li::before {
+  content: '•'; /* You can use any character, like '•' or '–' */
+  @apply absolute left-0 text-[1.2rem]; /* Color and position the bullet */
+}
+
+/* AFTER */
+.input {
+  @apply mt-1 block w-full py-2 border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500;
+}
+
+/* src/index.css */
+/* ... */
+.label {
+  @apply block text-sm font-medium text-slate-600;
+}
+
+/* AFTER */
+.btn-secondary {
+  @apply flex justify-center items-center gap-2 bg-slate-200 text-slate-800 font-semibold py-2 px-4 rounded-lg hover:bg-slate-300 transition-colors;
+}
+
+/* src/index.css */
+
+/* ... your other styles ... */
+
+
+
+.hide-number-arrows::-webkit-outer-spin-button,
+.hide-number-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hide-number-arrows {
+  -moz-appearance: textfield; /* For Firefox */
+}
+
+.cell-compact {
+  @apply p-3 block md:table-cell border-b md:border-b-0;
+}
+
+.btn-primary {
+    @apply flex items-center justify-center gap-2 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors;
+}

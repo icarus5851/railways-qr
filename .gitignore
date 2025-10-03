@@ -1,0 +1,44 @@
+# =========================================
+# Secrets (Most Important)
+# =========================================
+# Ignore environment files that contain secret keys and passwords
+.env
+.env.local
+
+# =========================================
+# Python / Backend
+# =========================================
+# Virtual environment folder
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+
+# Flask instance folder
+instance/
+
+# =========================================
+# Node.js / Frontend
+# =========================================
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+package-lock.json
+# =========================================
+# OS and Editor Files
+# =========================================
+.DS_Store
+.vscode/
+.idea/
