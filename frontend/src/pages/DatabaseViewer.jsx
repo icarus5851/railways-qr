@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 import { PlusCircle, Trash2, ChevronsUpDown, ChevronUp, ChevronDown, Search } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 import LoadingSpinner from '../components/common/LoadingSpinner';
+// ADD THIS LINE
+import { API_BASE_URL } from '../config';
 
-const API_BASE_URL = 'http://localhost:8000/api';
 const ITEMS_PER_PAGE = 10;
 
 const DatabaseViewer = () => {

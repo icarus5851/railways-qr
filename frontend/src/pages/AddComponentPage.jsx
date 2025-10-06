@@ -4,8 +4,8 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { PlusCircle, Download, Loader, RefreshCw, Trash2, FileCode } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
-
-const API_BASE_URL = 'http://localhost:8000/api';
+// ADD THIS LINE
+import { API_BASE_URL } from '../config';
 
 const downloadFile = (content, fileName) => {
   const blob = new Blob([content], { type: 'application/octet-stream' });

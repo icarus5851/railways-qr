@@ -4,8 +4,8 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
 import { FileText, Bot, AlertTriangle, Server, ClipboardList } from 'lucide-react';
-
-const API_BASE_URL = 'http://localhost:8000/api';
+// ADD THIS LINE
+import { API_BASE_URL } from '../config';
 
 const DetailRow = ({ label, value }) => (
   <div className="flex justify-between items-start py-3 border-b border-slate-200">

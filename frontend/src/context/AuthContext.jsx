@@ -4,7 +4,8 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const AuthContext = createContext(null);
-const API_BASE_URL = 'http://localhost:8000/api';
+// ADD THIS LINE
+import { API_BASE_URL } from '../config';
 
 export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem('authToken'));

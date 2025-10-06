@@ -4,7 +4,8 @@
 # Ignore environment files that contain secret keys and passwords
 .env
 .env.local
-
+.env.development
+.env.production
 # =========================================
 # Python / Backend
 # =========================================

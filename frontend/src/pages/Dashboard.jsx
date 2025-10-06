@@ -4,8 +4,8 @@ import axios from 'axios';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 import { Package, CheckSquare, Truck, AlertTriangle } from 'lucide-react';
 import LoadingSpinner from '../components/common/LoadingSpinner';
-
-const API_BASE_URL = 'http://localhost:8000/api';
+// ADD THIS LINE
+import { API_BASE_URL } from '../config';
 
 const Dashboard = () => {
   const [stats, setStats] = useState({ total: 0, installed: 0, inStorage: 0 });
