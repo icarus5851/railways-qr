@@ -34,7 +34,7 @@ QR_MODULE_SIZE_MM = 0.606
 DM_MODULE_SIZE_MM = 0.45
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://railways-qr.vercel.app"}})
 
 # Configure JWT
 app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY")
